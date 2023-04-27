@@ -1,15 +1,14 @@
 {
   "name": "rn-toast-ios-android",
   "author": "Erick Chavez",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "main": "src/index.ts",
   "types": "types/index.d.ts",
   "files": [
     "src/",
     "dist/*",
-    "types/*",
-    "lib-esm/*"
+    "types/*"
   ],
   "scripts": {
     "android": "react-native run-android",

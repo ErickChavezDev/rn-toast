@@ -1,17 +1,27 @@
 {
-  "name": "rntoast",
+  "name": "rn-toast-ios-android",
+  "author": "Erick Chavez",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
+  "main": "dist/index.js",
+  "type": "types/index.d.ts",
+  "files": [
+    "src/",
+    "dist/*",
+    "types/*"
+  ],
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "build": "rm -rf dist && tsc && tsc -m es6 --outDir lib-esm && yalc publish && yalc push"
   },
   "dependencies": {
     "react": "18.1.0",
-    "react-native": "0.70.6"
+    "react-native": "0.70.6",
+    "react-native-safe-area-context": "^4.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

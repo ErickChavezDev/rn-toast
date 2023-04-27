@@ -26,8 +26,6 @@ const ToastProvider: React.FC<ToastProviderProp> = ({children}) => {
   };
 
   const handleShowToast = React.useCallback(() => {
-    console.log('hola mundo');
-
     setShowToast(true);
     setTimeout(() => {
       setShowToast(false);

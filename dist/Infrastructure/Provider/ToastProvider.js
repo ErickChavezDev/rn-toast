@@ -19,7 +19,6 @@ const ToastProvider = ({ children }) => {
         duration: durationToast,
     };
     const handleShowToast = react_1.default.useCallback(() => {
-        console.log('hola mundo');
         setShowToast(true);
         setTimeout(() => {
             setShowToast(false);

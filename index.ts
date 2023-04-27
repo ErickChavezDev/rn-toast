@@ -1,3 +1,6 @@
+export {default as ToastProvider} from './src/Infrastructure/Provider/ToastProvider';
+export {default as useToast} from './src/hook/useToast';
+/* 
 import React, {useCallback, useEffect} from 'react';
 import {View, Button, SafeAreaView, Alert} from 'react-native';
 
@@ -51,3 +54,4 @@ const Screen = () => {
 };
 
 export default App;
+*/
